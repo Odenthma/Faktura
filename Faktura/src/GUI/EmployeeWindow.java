@@ -3,9 +3,8 @@ package GUI;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JTextField;
 
-public class MainWindow {
+public class EmployeeWindow {
 
 	private JFrame frame;
 
@@ -16,7 +15,7 @@ public class MainWindow {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MainWindow window = new MainWindow();
+					EmployeeWindow window = new EmployeeWindow();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -28,7 +27,7 @@ public class MainWindow {
 	/**
 	 * Create the application.
 	 */
-	public MainWindow() {
+	public EmployeeWindow() {
 		initialize();
 	}
 
@@ -37,7 +36,8 @@ public class MainWindow {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 504, 525);
+		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+
 }
