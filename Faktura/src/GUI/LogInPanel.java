@@ -5,6 +5,8 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 
+import Tools.EncryptDecrypt;
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -31,10 +33,23 @@ public class LogInPanel extends JPanel {
 		JButton btnLogin = new JButton("Login");
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				getRootPane().removeAll();
-				getRootPane().getContentPane().add(new MainPanel());
-			}
-		});
+				
+				try {
+					EncryptDecrypt.createPassword("password");
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				try {
+					EncryptDecrypt.authenticatePassword("passwords");
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			
+			
+			
+			}});
 		btnLogin.setBounds(30, 84, 89, 23);
 		add(btnLogin);
 

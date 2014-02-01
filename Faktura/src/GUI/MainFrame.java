@@ -50,7 +50,7 @@ public class MainFrame extends JFrame {
 		MainPanel mainPanel = new MainPanel();
 		logInPanel.setVisible(true);
 		getContentPane().add(logInPanel, BorderLayout.CENTER);
-		getContentPane().add(mainPanel, BorderLayout.CENTER);
+		//getContentPane().add(mainPanel, BorderLayout.CENTER);
 	}
 
 }
