@@ -1,0 +1,179 @@
+<uml>
+   <greenVersion="30100"/>
+   <type>
+      <name="=Faktura/src<GUI{LogInPanel.java[LogInPanel"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="0"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=Faktura/src<GUI{MainFrame.java[MainFrame"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="200"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=Faktura/src<GUI{MainPanel.java[MainPanel"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="400"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=Faktura/src<GUI{CompanyPanel.java[CompanyPanel"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="600"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=Faktura/src<GUI{dfd.java[dfd"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="-1"/>
+      <y="259"/>
+   </type>
+   <type>
+      <name="=Faktura/src<GUI{TestPanel.java[TestPanel"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="151"/>
+      <y="122"/>
+   </type>
+   <type>
+      <name="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JTextField.class[JTextField"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="409"/>
+      <y="156"/>
+   </type>
+   <type>
+      <name="=Faktura/src<GUI{LogInPanel.java[LogInPanel~LogInPanel["/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="462"/>
+      <y="78"/>
+   </type>
+   <type>
+      <name="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JPanel.class[JPanel"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="-78"/>
+      <y="409"/>
+   </type>
+   <type>
+      <name="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JPasswordField.class[JPasswordField"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="200"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JButton.class[JButton"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="400"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JFrame.class[JFrame"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="701"/>
+      <y="124"/>
+   </type>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=Faktura/src<GUI{dfd.java[dfd"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JPanel.class[JPanel"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=Faktura/src<GUI{MainFrame.java[MainFrame"/>
+      <targetType="=Faktura/src<GUI{LogInPanel.java[LogInPanel"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=Faktura/src<GUI{MainFrame.java[MainFrame"/>
+      <targetType="=Faktura/src<GUI{MainPanel.java[MainPanel"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=Faktura/src<GUI{LogInPanel.java[LogInPanel"/>
+      <targetType="=Faktura/src<GUI{LogInPanel.java[LogInPanel~LogInPanel["/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.composition.CompositionPart"/>
+      <sourceType="=Faktura/src<GUI{LogInPanel.java[LogInPanel"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JTextField.class[JTextField"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=Faktura/src<GUI{TestPanel.java[TestPanel"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JPanel.class[JPanel"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=Faktura/src<GUI{CompanyPanel.java[CompanyPanel"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JPanel.class[JPanel"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=Faktura/src<GUI{LogInPanel.java[LogInPanel"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JButton.class[JButton"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=Faktura/src<GUI{MainPanel.java[MainPanel"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JPanel.class[JPanel"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=Faktura/src<GUI{CompanyPanel.java[CompanyPanel"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JButton.class[JButton"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=Faktura/src<GUI{LogInPanel.java[LogInPanel"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JPanel.class[JPanel"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.composition.CompositionPart"/>
+      <sourceType="=Faktura/src<GUI{LogInPanel.java[LogInPanel"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JPasswordField.class[JPasswordField"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=Faktura/src<GUI{MainFrame.java[MainFrame"/>
+      <targetType="=Faktura/C:\/Program Files \(x86)\/Java\/jre7\/lib\/rt.jar<javax.swing(JFrame.class[JFrame"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+</uml>
+
