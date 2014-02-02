@@ -5,8 +5,8 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 
-import Tools.EncryptDecrypt;
-import Tools.EncryptDecrypt_;
+import Tools.Encrypter;
+import Tools.UserTools;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
@@ -37,45 +37,13 @@ public class LogInPanel extends JPanel {
 		JButton btnLogin = new JButton("Login");
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				try {
-					//EncryptDecrypt_.createPassword("a","a");
-				} catch (Exception e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-				try {
-					//EncryptDecrypt_.authenticatePassword("admin","admin");
-				} catch (Exception e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-				
-				doDBStuff();
-			
-			
-			
+				//UserTools.saveUserData(UserTools.createUser(textField.getText(), passwordField.getText()));
+					UserTools.compareLoginData(textField.getText(), passwordField.getText());
 			}});
 		btnLogin.setBounds(30, 84, 89, 23);
 		add(btnLogin);
 
 	}
 	
-	private void doDBStuff() {
-		  try{
-	           Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-	           Connection con = DriverManager.getConnection("jdbc:odbc:Driver={Microsoft Access Driver (*.mdb)};DBQ=C:/tutorial/kontakte.mdb","","");
-	         
-	           Statement st=con.createStatement();
-	           String name="roseindia";
-	           String address="delhi";
-	           int i=st.executeUpdate("insert into user(username,password) values('"+name+"','"+address+"')");
-	           System.out.println("Row is added");
-	           }
-	        catch(Exception e){
-	            System.out.println("does not added:"+e);
-	        }
-         
-     
-	}
+	
 }
